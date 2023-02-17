@@ -1,0 +1,39 @@
+.box{
+    background-color: white;
+    text-align: center;
+    margin:auto;
+    padding: auto;
+    width: 300px;
+    border:2px solid rgb(28, 37, 90);
+    box-shadow:10px 10px 5px 5px  rgb(28, 37, 90);
+}
+div{
+    margin-bottom:80px;
+}
+.add1:hover{
+    background-color: green;
+    cursor: pointer;
+}
+.add2:hover{
+    background-color: red;
+    cursor: pointer;
+}
+body{
+     background-image: url("https://www.foodserviceandhospitality.com/wp-content/uploads/2017/09/npd.jpg");
+}
+.placedcls a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.placedcls{
+    background-color: blue;
+    border-radius: 5px;
+}
+.cancledcls a{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  .cancledcls{
+      background-color: rgb(226, 16, 16);
+      border-radius: 5px;
+  }

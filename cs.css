@@ -1,0 +1,40 @@
+p {
+    
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    /* bottom: 200px; */
+    left: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+    position: relative;
+    /* bottom: 220px; */
+    left: 50px;
+}
+
+div {
+    margin: 20px;
+}
+
+div li a {
+    margin-left: 00px;
+    font-size: large;
+    text-decoration: none;
+}
+
+.container .card li {
+    list-style: none;
+}
+.class5{
+    width: 30px;
+}
+h5{
+    color: rgb(38, 116, 116);
+}
+.div5{
+    position: fixed;
+}

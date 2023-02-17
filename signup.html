@@ -1,0 +1,195 @@
+<!sign up page>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+          
+
+            .bg {
+                background: url(https://th.bing.com/th/id/OIP.ZaxCz9xGhfl3xEnJ4RXAyAHaEc?w=291&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+                background-repeat: no-repeat;
+                background-size: cover;
+
+            }
+
+            .bg::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                inset: 0;
+                background: black;
+                opacity: .7;
+            }
+
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .form2 {
+                height: 450px;
+                width: 400px;
+                border: 1px solid black;
+                background-color: white;
+                border-radius: 5%;
+                position: relative;
+                top: 100px;
+                left: 400px;
+            }
+
+            .bg2::after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                inset: 0;
+                background: black;
+                opacity: .7;
+            }
+
+            .a2 {
+                text-decoration: none;
+                font-family: cursive;
+                color: azure;
+            }
+
+            .btnn {
+                width: 220px;
+                height: 70px;
+                border: 2px solid rgb(16, 10, 10);
+                background-color: rgb(33, 22, 22);
+                font-size: 35px;
+                border-radius: 25px;
+                margin-top: 30px;
+                margin-left: 95px;
+            }
+
+            .btnn:focus {
+                background-color: darkblue;
+            }
+
+            .lab2 {
+                margin-left: 10px;
+                font-size: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            .labb2 {
+                height: 50px;
+                width: 250px;
+                border: 2px solid black;
+                margin-left: 75px;
+                margin-top: 40px;
+                border-radius: 20px;
+                background-color: black;
+                color: azure;
+            }
+
+            .labb2 h2 {
+                font-family: cursive;
+                text-align: center;
+            }
+
+            .inp2 {
+                margin-left: 10px;
+                width: 200px;
+                height: 30px;
+                font-family: 'Times New Roman';
+                font-size: 30px;
+                background: transparent;
+                border: 2px solid #211d1d;
+                border-radius: 5px;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+
+            .h3 {
+                margin-left: 100px;
+            }
+
+            .login {
+                color: green;
+                text-decoration: none;
+            }
+
+            .signupbtn {
+                font-size: 25px;
+                color: azure;
+                text-decoration: none;
+            }
+
+            .submitbtn {
+                height: 30px;
+                width: 100px;
+                margin-left: 120px;
+                border-radius: 30px;
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+            function validation() {
+                let fname = document.getElementById('fname').value;
+                let pass = document.getElementById('password').value;
+                let email = document.getElementById('email').value;
+
+                if (fname == "" || pass == "" || email == "") {
+                    if (fname.length < 6) {
+                        let id1 = document.getElementById('l1');
+                        id1.style = "visibility:visible";
+                        return false;
+                    }
+                    if (email == "") {
+                        let id3 = document.getElementById('l3');
+                        id3.style.visibility = "visible";
+                        return false;
+                    }
+                    if (pass.length < 6) {
+                        let id2 = document.getElementById('l2');
+                        id2.style.visibility = "visible";
+                        return false;
+                    }
+
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+    </head>
+
+    <body class="bg">
+        <form action="index.html" onsubmit="return validation();">
+
+            <div class="form2">
+                <button class="btnn">
+                    <p class="signupbtn" href="#">SIGN-UP HERE!!</p>
+                </button> <br> <br>
+                <label class="lab2" for="">NAME:<input class="inp2" type="text" id="fname"> </label> <br>
+                <label for="" id="l1" style=" color:red;visibility:hidden">(only alphabets and min of 6
+                    characters)
+                </label><br> <br>
+                <label class="lab2" for="">EMAIL-ID: <span><input class="inp2" type="text" id="email"> </label><br>
+                <label for="" id="l3" style="color:crimson;visibility:hidden">(must follow
+                    standard pattern
+                    name@domain.com)</label> <br> <br>
+                <label class="lab2" for="">PASSWORD:<input class="inp2" type="password" id="password"></label><br>
+                <label for="" id="l2" style="color:crimson;visibility:hidden">(Min 6 <br> Characters
+                    Allowed)</label><br>
+
+                <a href="index.html"><input type="submit" value="SIGN UP" class="submitbtn"></a>
+                <br> <br>
+                <h3 class="h3">Having Account already?? <a class="login" href="logins.html">LOGIN</a></h3>
+            </div>
+        </form>
+    </body>
+
+    </html>

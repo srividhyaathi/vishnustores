@@ -1,0 +1,75 @@
+.add{
+    margin-left:15px;
+    margin-bottom: 5px;
+    padding:2%;
+    background-color: rgb(42, 167, 42);
+}
+.box{
+    background-color: white;
+    text-align: center;
+    margin:auto;
+    padding: auto;
+    width: 300px;
+    /* height: 300px; */
+    border:2px solid rgb(28, 37, 90);
+    box-shadow:10px 10px 5px 5px  rgb(28, 37, 90);
+}
+.backicon{
+    margin-left:5px;
+    margin-top:5px;
+    color:orange;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    padding: 2px;
+    padding-right: 1px;
+    background-color: rgb(28, 37, 90);
+}
+td{
+    text-align: center;
+}
+.tbl{
+    background-color: white;
+     margin-left:150px;
+     border-collapse: collapse;
+}
+.np{
+    width:95%;
+}
+body{
+    background-image: url("https://dominion-funds.com/media/fikk3syn/istock-1251263531.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+/* body::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgba(196, 241, 245, 0.971);
+    opacity: .5;
+} */
+h3{
+    font-size: 50px;
+    color: rgb(234, 18, 151);
+}
+ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.logo{
+    height:60px;
+    width:70px;
+}
+.stores{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgba(37, 5, 22, 0.975);
+}

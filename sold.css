@@ -1,0 +1,27 @@
+#cart-container  table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+#cart-container  table thead {
+  font-weight: 700;
+}
+#cart-container  table thead {
+  background-color: rgb(245, 95, 20);
+  color:white;
+  border:none;
+  padding:6px 0px;
+}
+#cart-container  table td{
+  border: 1px solid #b6b3b3;
+  text-align:center;
+}
+.avail{
+    background-color: green;
+}
+.unavail{
+    background-color: red;
+}
+.rows{
+    height: 20px;;
+}
